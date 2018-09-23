@@ -1,0 +1,14 @@
+<div class="single-grid-right" *ngFor="let episode of episodes">
+  <div class="single-right-grids" (click)="onSelectEpisode(episode)">
+    <div class="col-md-4 single-right-grid-left">
+      <a><img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{ episode.poster_path }}" alt="" /></a>
+    </div>
+    <div class="col-md-8 single-right-grid-right">
+      <p class="title">{{ episode.name }}</p>
+      <p class="author">{{ episode.serie_name }}</p>
+      <p class="author">Season {{ episode.season_number }}</p>
+      <p class="views">{{ episode.air_date | slice:8}}/{{episode.air_date | slice:-5:-3}}/{{episode.air_date | slice:0:4 }}</p>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</div>

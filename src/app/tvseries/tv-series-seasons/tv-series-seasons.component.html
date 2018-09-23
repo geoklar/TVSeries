@@ -1,0 +1,15 @@
+<div class="general_agileits_genres">
+  <h4 class="latest-text w3_latest_text">My TV Series</h4>
+  <app-bread-crumb-nav title="TV - Series"></app-bread-crumb-nav>
+  <div class="container">
+    <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+      <div id="myTabContent" class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+          <div class="w3_agile_featured_movies">
+            <app-tv-series-season-item [tvSerie]="tvSerie"></app-tv-series-season-item>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

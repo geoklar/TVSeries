@@ -1,0 +1,18 @@
+<div class="general_agileits_genres">
+    <h4 class="latest-text w3_latest_text">Upcoming TV Series Episodes</h4>
+    <app-bread-crumb-nav title="TV - Series - Up Coming Episodes"></app-bread-crumb-nav>
+    <div class="container">
+			<div class="single-page-agile-info">
+        <div class="show-top-grids-w3lagile">
+          <div class="col-md-4 single-right">
+              <h3>Up Next</h3>
+              <app-upcoming-item (selectedEpisode)="onSelectedEpisode($event)"></app-upcoming-item>
+          </div>
+          <div class="col-sm-8 single-left">
+            <app-upcoming-item-info [selectedEpisode]="episode"></app-upcoming-item-info>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -20,10 +20,17 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/images"
             ],
             "styles": [
-              "src/styles.css"
+              "src/css/bootstrap.css",
+              "src/styles.css",
+              "src/css/single.css",
+              "src/css/contactstyle.css",
+              "src/css/faqstyle.css",
+              "src/css/medile.css",
+              "src/css/font-awesome.min.css"
             ],
             "scripts": []
           },

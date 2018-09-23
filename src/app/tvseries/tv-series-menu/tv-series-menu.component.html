@@ -1,0 +1,11 @@
+<ul id="myTab" class="nav nav-tabs" role="tablist">
+  <li role="presentation" [ngClass]="{'active': category === 'All'}">
+    <a id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true" (click)="showSeries('All')">All</a>
+  </li>
+  <li role="presentation" [ngClass]="{'active': category === 'G'}">
+    <a role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false" (click)="showSeries('G')">George's</a>
+  </li>
+  <li role="presentation" [ngClass]="{'active': category === 'N'}">
+    <a role="tab" id="imdb-tab" data-toggle="tab" aria-controls="imdb" aria-expanded="false" (click)="showSeries('N')">Natasa's</a>
+  </li>
+</ul>

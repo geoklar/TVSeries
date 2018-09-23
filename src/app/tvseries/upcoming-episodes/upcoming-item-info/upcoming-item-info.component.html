@@ -1,0 +1,17 @@
+<div *ngIf="selectedEpisode !== null">
+  <div class="song">
+    <div class="song-info">
+      <h3>{{ selectedEpisode.name }}</h3>	
+  </div>
+    <div class="video-grid-single-page-agileits">
+      <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{ selectedEpisode.poster_path }}" alt="" class="img-responsive" />
+    </div>
+  </div>
+  <div class="clearfix"> </div>
+
+  <div class="all-comments">
+    <div class="all-comments-info">
+      <a href="#">{{ selectedEpisode.overview }}</a>
+    </div>
+  </div>
+</div>

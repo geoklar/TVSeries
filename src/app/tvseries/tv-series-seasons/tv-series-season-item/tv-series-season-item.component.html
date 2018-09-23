@@ -1,0 +1,33 @@
+<div class="col-md-2 w3l-movie-gride-agile" *ngFor="let season of seasons | orderBy: ['+season_number']">
+  <a [routerLink]="['/series', tvSerie.id, season.season_number]" class="hvr-shutter-out-horizontal">
+    <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{ season.poster_path }}" title="album-name" class="img-responsive" alt=" " />
+    <div class="w3l-action-icon">
+      <i class="fa fa-play-circle" aria-hidden="true"></i>
+    </div>
+  </a>
+  <div class="mid-1 agileits_w3layouts_mid_1_home">
+    <div class="w3l-movie-text">
+      <h6><a [routerLink]="['/series', tvSerie.id]">{{ tvSerie.name }}</a></h6>							
+    </div>
+    <div class="w3l-movie-text">
+      <h6><a [routerLink]="['/series', tvSerie.id, season.season_number]">{{ season.name }}</a></h6>							
+    </div>
+    <!-- <div class="mid-2 agile_mid_2_home"> -->
+    <div class="w3l-movie-text">
+      <p>{{ season.air_date | slice:0:4 }}</p>
+      <!-- <div class="block-stars">
+        <ul class="w3l-ratings">
+          <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+        </ul>
+      </div> -->
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <!-- <div class="ribben">
+    <p>NEW</p>
+  </div> -->
+</div>
